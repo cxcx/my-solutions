@@ -9,19 +9,48 @@
     
 3th
     preduce {Ai}(Ai:整数)
-    sum = 0
+    sum := 0
     for i:=0 : Imax-1
-        sum = sum + A[i]
+        sum := sum + A[i]
 
 4th
     preduce {Ai}
-    val_pre = A[1]-A[0]
+    val_pre := A[1]-A[0]
     for i:=2 : Imax-1
         if (A[i]-A[i-1])/val_pre>=1 or (A[i]-A[i-1])/val_pre<=-1
             val_pre = A[i]-A[i-1]
 
 5th
-    
+    preduce {Ai},{Bi}
+    n := 0
+    sort({Ai})
+    for i:=0 : Imax-2
+        if A[i] equal A[i+1]
+            n++
+        if n>2 and A[i] not equal A[i+1] and i<Imax-1
+            n := 0
+            add a[i] to {Bi}
 
-    
-    
+6th
+    preduce {Ai}
+    n := 0
+    for i:=0 : Imax-1
+        if  A[i]<0
+            n++
+
+7th
+    preduce {Ai}
+    loct := 0
+    for i:= 0 : Imax-1
+        if A[i]%2 equal 0
+            loct = i
+
+8th
+    preduce {Ai}
+    last := 0
+    big_loct := 0
+    for i:=0 : Imax-1
+        if A[i]%2 equal 0
+            last i
+
+            if 
