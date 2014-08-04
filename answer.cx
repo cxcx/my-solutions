@@ -1,0 +1,27 @@
+/***************************** 3th ********************************/
+1th
+    preduce {Ai}
+    i := 0
+    max := A[i]
+    while i<Imax
+        if A[i+1] > A[i]
+            max := A[i]
+    
+3th
+    preduce {Ai}(Ai:整数)
+    sum = 0
+    for i:=0 : Imax-1
+        sum = sum + A[i]
+
+4th
+    preduce {Ai}
+    val_pre = A[1]-A[0]
+    for i:=2 : Imax-1
+        if (A[i]-A[i-1])/val_pre>=1 or (A[i]-A[i-1])/val_pre<=-1
+            val_pre = A[i]-A[i-1]
+
+5th
+    
+
+    
+    
